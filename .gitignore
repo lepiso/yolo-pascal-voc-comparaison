@@ -1,0 +1,24 @@
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# YOLOv5 (cloné séparément)
+yolov5/
+
+# Poids de modèles
+*.pt
+*.pth
+
+# Dataset (trop lourd)
+data/*
+!data/.gitkeep
+!data/data.yaml
+!data/data.yaml.example
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Fichiers lourds divers
+*.pdf

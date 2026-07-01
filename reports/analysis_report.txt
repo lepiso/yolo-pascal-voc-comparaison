@@ -1,0 +1,52 @@
+======================================================================
+RAPPORT D'ANALYSE CRITIQUE — YOLOv5 vs YOLOv8 sur Pascal VOC
+======================================================================
+
+1. PERFORMANCES GLOBALES (moyenne sur toutes les augmentations)
+
+           map50  map50_95  precision  recall       f1
+model                                                 
+yolov5s  0.64470   0.42942    0.69906  0.6078  0.65022
+yolov8s  0.66372   0.44504    0.71510  0.6285  0.66900
+
+
+2. VALIDATION DE L'HYPOTHÈSE H1
+H1 : YOLOv8 obtient un mAP@0.5:0.95 supérieur à YOLOv5.
+
+H1 VALIDÉE : YOLOv8s (0.4450) > YOLOv5s (0.4294)
+Gain relatif : +3.64% en mAP@0.5:0.95
+
+
+3. IMPACT DES AUGMENTATIONS
+
+Meilleure augmentation par modèle (selon mAP@0.5:0.95) :
+
+  yolov5s :
+    Meilleure augmentation : mosaic (mAP@0.5:0.95 = 0.4403)
+    Moins bonne augmentation : rotation (mAP@0.5:0.95 = 0.4192)
+    Gain vs baseline : +0.0207
+  yolov8s :
+    Meilleure augmentation : mosaic (mAP@0.5:0.95 = 0.4554)
+    Moins bonne augmentation : no_augmentation (mAP@0.5:0.95 = 0.4278)
+    Gain vs baseline : +0.0276
+
+
+4. GAIN RELATIF YOLOv8 vs YOLOv5 PAR AUGMENTATION
+
+  no_augmentation      : +1.95% (YOLOv5=0.4196 → YOLOv8=0.4278)
+  flip_horizontal      : +3.38% (YOLOv5=0.4284 → YOLOv8=0.4429)
+  rotation             : +6.25% (YOLOv5=0.4192 → YOLOv8=0.4454)
+  mosaic               : +3.43% (YOLOv5=0.4403 → YOLOv8=0.4554)
+  mixup                : +3.21% (YOLOv5=0.4396 → YOLOv8=0.4537)
+
+
+5. RECOMMANDATION
+
+La combinaison optimale observée est :
+  Modèle       : yolov8s
+  Augmentation : mosaic
+  mAP@0.5:0.95 : 0.4554
+  mAP@0.5      : 0.6736
+  F1-score     : 0.6833
+
+======================================================================

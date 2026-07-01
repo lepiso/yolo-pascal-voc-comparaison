@@ -1,0 +1,6 @@
+2026-07-01 10:24:20 | INFO | train_yolov8_no_augmentation | ============================================================
+2026-07-01 10:24:20 | INFO | train_yolov8_no_augmentation | DÉMARRAGE — YOLOv8 | Augmentation : no_augmentation
+2026-07-01 10:24:20 | INFO | train_yolov8_no_augmentation | ============================================================
+2026-07-01 10:24:22 | INFO | train_yolov8_no_augmentation | Paramètres d'augmentation : {'fliplr': 0.0, 'flipud': 0.0, 'degrees': 0.0, 'translate': 0.0, 'scale': 0.0, 'shear': 0.0, 'perspective': 0.0, 'mosaic': 0.0, 'mixup': 0.0, 'hsv_h': 0.0, 'hsv_s': 0.0, 'hsv_v': 0.0, 'copy_paste': 0.0}
+2026-07-01 10:24:22 | INFO | train_yolov8_no_augmentation | MODE DRY-RUN : configuration prête, entraînement non lancé.
+2026-07-01 10:24:22 | INFO | train_yolov8_no_augmentation | Commande équivalente : model.train(data='/home/joan/Documents/GE-IT M1 IA&BIG DATA/Computer Vision/Projet Final/yolo-pascal-voc-comparaison/data/data.yaml', epochs=50, ...)

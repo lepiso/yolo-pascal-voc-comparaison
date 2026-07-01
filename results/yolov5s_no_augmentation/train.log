@@ -1,0 +1,5 @@
+2026-07-01 10:24:03 | INFO | train_yolov5_no_augmentation | ============================================================
+2026-07-01 10:24:03 | INFO | train_yolov5_no_augmentation | DÉMARRAGE — YOLOv5 | Augmentation : no_augmentation
+2026-07-01 10:24:03 | INFO | train_yolov5_no_augmentation | ============================================================
+2026-07-01 10:24:03 | INFO | train_yolov5_no_augmentation | Commande : python /home/joan/Documents/GE-IT M1 IA&BIG DATA/Computer Vision/Projet Final/yolo-pascal-voc-comparaison/yolov5/train.py --img 640 --batch 16 --epochs 50 --data /home/joan/Documents/GE-IT M1 IA&BIG DATA/Computer Vision/Projet Final/yolo-pascal-voc-comparaison/data/data.yaml --weights yolov5s.pt --hyp /home/joan/Documents/GE-IT M1 IA&BIG DATA/Computer Vision/Projet Final/yolo-pascal-voc-comparaison/results/yolov5s_no_augmentation/hyp.yaml --name yolov5s_no_augmentation --project /home/joan/Documents/GE-IT M1 IA&BIG DATA/Computer Vision/Projet Final/yolo-pascal-voc-comparaison/results --workers 4 --exist-ok
+2026-07-01 10:24:03 | INFO | train_yolov5_no_augmentation | MODE DRY-RUN : commande affichée, entraînement non lancé.
